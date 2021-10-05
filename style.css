@@ -24,6 +24,13 @@ video {
   max-width: 100%;
 }
 
+/* General */
+html {
+  scroll-behavior: smooth;
+
+}
+
+
 /* Typography */
 body {
   font-family: 'Poppins', sans-serif;
@@ -38,6 +45,10 @@ nav, h2 {
 }
 nav {
   font-size: 1.625em;
+}
+nav li a {
+  text-decoration: none;
+  color: #000000;
 }
 h2 {
   font-size: 2.25em;
@@ -87,7 +98,7 @@ nav li {
 .section {
   background-color: #B5FB5E;
   margin-top: 1em;
-  padding: 1.5em 2.25em;
+  padding: 1.5em 2.25em 2.25em;
 }
 h2 {
   margin-bottom: 1em;
@@ -101,7 +112,15 @@ img {
   width: 35%;
   margin-right: 5%;
   vertical-align: text-top;
-  height: ;
+  height: 20em;
+  object-fit: cover;
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transition: filter 0.25s, mix-blend-mode 0.25s;
+}
+img:hover {
+  filter: grayscale(0);
+  mix-blend-mode: normal;
 }
 .menu-items {
   margin-left: 40%;
