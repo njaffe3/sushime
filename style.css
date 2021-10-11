@@ -136,3 +136,24 @@ img:hover {
   margin-bottom: 2.5em;
 }
 
+@media screen and (max-width: 50em) { /* 800px */
+  h1 {
+    font-size: 3em;
+  }
+  nav {
+    font-size: 1.25em;
+  }
+  header nav {
+    position: static;
+    text-align: left;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1.5em;
+    margin-left: 0;
+  }
+  img {
+    width: 80%;
+    margin-right: 0;
+  }
+}
