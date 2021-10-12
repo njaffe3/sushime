@@ -71,8 +71,8 @@ li p, .contact p {
 
 /* Layout */
 body {
-  padding-bottom: 4em;
-  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-top: 0;
   background-color: #f8fff0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b5fb5e' fill-opacity='0.98'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -83,19 +83,16 @@ header, div {
 }
 header {
   background-color: #87D12B;
-  padding: 1.5em 2.25em;
+  padding: 1em 1.75em;
   position: relative;
 }
 header nav {
   display: inline-block;
-  position: absolute;
-  top: 2.5em;
-  right: 2.25rem;
-  text-align: right;
+  text-align: left;
 }
 nav li {
   display: inline-block;
-  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 .section {
   background-color: #B5FB5E;
@@ -105,18 +102,10 @@ nav li {
 h2 {
   margin-bottom: 1em;
 }
-.text-section {
-  display: inline-block;
-  width: 59%;
-  vertical-align: text-top;
-}
 img {
-  width: 35%;
-  margin-right: 5%;
+  width: 100%;
   display: inline-block;
-  vertical-align: text-top;
-  height: 20em;
-  object-fit: cover;
+  margin-bottom: 2em;
   filter: grayscale(1);
   mix-blend-mode: multiply;
   transition: filter 0.25s, mix-blend-mode 0.25s;
@@ -126,14 +115,13 @@ img:hover {
   mix-blend-mode: normal;
 }
 .menu-items {
-  margin-left: 40%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .menu-items li {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 .contact .text-section p {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 
@@ -162,17 +150,46 @@ img:hover {
   body {
     padding-bottom: 4em;
     padding-top: 2em;
-    background-color: #f8fff0;
    }
-  header, div {
-    max-width: 60em;
-    margin-left: auto;
-    margin-right: auto;
-  }
   header {
-    background-color: #87D12B;
     padding: 1.5em 2.25em;
     position: relative;
+  }
+  header nav {
+    display: inline-block;
+    position: absolute;
+    top: 2.5em;
+    right: 2.25rem;
+    text-align: right;
+  }
+  nav li {
+    margin-left: 1.5em;
+  }
+  .text-section {
+    display: inline-block;
+    width: 59%;
+    vertical-align: text-top;
+  }
+  img {
+    width: 35%;
+    margin-right: 5%;
+    display: inline-block;
+    vertical-align: text-top;
+    height: 20em;
+    object-fit: cover;
+    filter: grayscale(1);
+    mix-blend-mode: multiply;
+    transition: filter 0.25s, mix-blend-mode 0.25s;
+  }
+  .menu-items {
+    margin-left: 40%;
+    margin-bottom: 2em;
+  }
+  .menu-items li {
+    margin-bottom: 2.5em;
+  }
+  .contact .text-section p {
+    margin-bottom: 2.5em;
   }
 }
 
