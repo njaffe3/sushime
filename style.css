@@ -42,31 +42,31 @@ body {
 h1 {
   font-weight: 800;
   text-transform: lowercase;
-  font-size: 4.0625em;
+  font-size: 3em;
 }
 nav, h2 {
   font-family: 'Roboto Slab', serif;
 }
 nav {
-  font-size: 1.625em;
+  font-size: 1.25em;
 }
 nav li a {
   text-decoration: none;
   color: #000000;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 1.75em;
 }
 h3 {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.125em;
 }
 .about p {
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 li p, .contact p {
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 /* Layout */
@@ -136,7 +136,47 @@ img:hover {
   margin-bottom: 2.5em;
 }
 
-@media screen and (max-width: 50em) { /* 800px */
+
+@media screen and (min-width: 50em) {
+  /* Typography */
+  h1 {
+    font-size: 4.0625em;
+  }
+  nav {
+    font-size: 1.625em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  .about p {
+    font-size: 1.25em;
+  }
+  li p, .contact p {
+    font-size: 1.125em;
+  }
+  
+  /* Layout */
+  body {
+    padding-bottom: 4em;
+    padding-top: 2em;
+    background-color: #f8fff0;
+   }
+  header, div {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    background-color: #87D12B;
+    padding: 1.5em 2.25em;
+    position: relative;
+  }
+}
+
+/*@media screen and (max-width: 50em) { /* 800px 
   h1 {
     font-size: 3em;
   }
@@ -152,8 +192,28 @@ img:hover {
     margin-right: 1.5em;
     margin-left: 0;
   }
-  img {
-    width: 80%;
-    margin-right: 0;
+  body {
+    padding-top: 0;
   }
-}
+  .section {
+    padding: 1em 2em 2em;
+  }
+  img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2em;
+    height: auto;
+  }
+  .text-section {
+    width: 100%;
+  }
+  .about p {
+    font-size: 1.125em;
+  }
+  li p, .contact p {
+    font-size: 1em;
+  }
+  .menu-items {
+    margin-left: 0;
+  }
+}*/
