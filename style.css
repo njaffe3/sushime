@@ -128,7 +128,7 @@ img:hover {
 @media screen and (min-width: 50em) {
   /* Typography */
   h1 {
-    font-size: 4.0625em;
+    font-size: 3.5em;
   }
   nav {
     font-size: 1.625em;
@@ -158,16 +158,14 @@ img:hover {
   header nav {
     display: inline-block;
     position: absolute;
-    top: 2.5em;
+    top: 2.125em;
     right: 2.25rem;
     text-align: right;
+    max-width: 50%;
   }
-  nav li {
-    margin-left: 1.5em;
-  }
-  .section {
-    background-color: blue;
-    color: white;
+  nav ul {
+    display: flex;
+    justify-content: space-between;
   }
   .text-section {
     display: inline-block;
